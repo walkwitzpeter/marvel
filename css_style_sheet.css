@@ -1,0 +1,114 @@
+body {
+  background: #BF7B6B;
+  text-align: left;
+  color: #401212;
+}
+
+img  {
+  max-width: 200px;
+
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+header {
+  font-family: Georgia, Palatino, serif;
+  background-color: #BF4539;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+section {
+  background: #FFFFFF;
+  max-width: 800px;
+  padding: 10px;
+}
+
+article {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+p {
+    font-family: arial, sans-serif;
+    /*border-style: solid;*/
+}
+
+
+h1 {
+  font-family: arial, sans-serif;
+  color: #063573;
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: arial, sans-serif;
+  color: #063573;
+  text-align: center;
+}
+
+table th{
+  color: #063573;
+}
+
+ol {
+  border-style: dotted;
+}
+
+/* --- Tags/Classes --- */
+#bestMovie {
+  color: #063573;
+}
+
+.active {
+  background-color: #063573;
+}
+
+.centered {
+  margin: auto;
+  width: 50%;
+}
+
+/* --- Nav Bar --- */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #401212;
+  font-family: arial, sans-serif;
+  margin: auto;
+  width: 50%;
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 17.2px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+footer {
+  color: #8C3F3F;
+}
