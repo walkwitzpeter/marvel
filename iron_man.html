@@ -2,68 +2,137 @@
 <html lang="en">
 <head> 
 	<meta charset="utf-8">
-  	<link rel="stylesheet" type="text/css" href="css_style_sheet.css">
 	<title>Iron Man</title>
+
+	<!-- This says our CSS is compatible with phones, and phones
+	       don't need to scale it strangely. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+
+	<!-- Optional theme add-on -->
+	<link 
+	rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+	crossorigin="anonymous">
 </head>
 
 <body>
-	<header>
-		<nav>	
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light bg-light">
+				<div class="container-fluid">
+		          <!-- Brand/site name -->
+		          <a class="navbar-brand" href="index.html">Marvel Movies Explained</a>
+		          <!-- Hamburger icon -->
+		          <button class="navbar-toggler"
+		                  type="button"
+		                  data-bs-toggle="collapse"
+		                  data-bs-target="#navbarSupportedContent"
+		                  aria-controls="navbarSupportedContent"
+		                  aria-expanded="false"
+		                  aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <!-- Div to hide stuff if we have hamburger -->
+		          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		            <!-- Nav bar item list -->
+		            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="about.html">About</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link active" href="iron_man.html">Iron Man</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="thor.html">Thor</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="black_panther.html">Black Panther</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+			</nav>
 			<h1>Iron Man</h1>
-			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="active"><a href="iron_man.html">Iron Man</a></li>
-				<li><a href="thor.html">Thor</a></li>
-				<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-				<li><a href="black_panther.html">Black Panther</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Peter Addition (extra) -->
-	<h1>Iron Man</h1>
+			<div class="alert alert-danger" role="alert"><h2>The Metal Man</h2></div>
+		</header>
 
-	<h3>Release Information</h3>
-	<p>Iron Man released in 2008 and was the first movie that Marvel released. 
-	While it is not the first movie in the Marvel timeline, it is very 
-	close. Iron Man belongs to Phase One of the Marvel timeline so it being 
-	released first didn't cause any storyline trouble. Iron Man was a huge 
-	success grossing over &dollar;585 million and winning multiple awards. 
-	People loved Robert Downey Jr. as Iron Man. Because of his performance 
-	in the first Iron Man, Downey, went on to play Iron Man in every Marvel 
-	movie in which he appeared.</p>
+		<h3>Release Information</h3>
+		<p>Iron Man released in 2008 and was the first movie that Marvel released. 
+		While it is not the first movie in the Marvel timeline, it is very 
+		close. Iron Man belongs to Phase One of the Marvel timeline so it being 
+		released first didn't cause any storyline trouble. Iron Man was a huge 
+		success grossing over &dollar;585 million and winning multiple awards. 
+		People loved Robert Downey Jr. as Iron Man. Because of his performance 
+		in the first Iron Man, Downey, went on to play Iron Man in every Marvel 
+		movie in which he appeared.</p>
 
-	<h3>Plot Line</h3>
-	<p>In the movie, Downey plays the character, Tony Stark, the real name of 
-	the man who wears the Iron Man suit. Stark is a super cocky, rich, yet 
-	brilliant young man who designs, builds, and sells ultra-modern weapons to the 
-	United States government. In the movie, Stark is abducted and held captive by 
-	terrosists after they attacked a military convoy Stark was in after 
-	demonstrating a new missile of his. In captivity, the terrorists force Stark to
-	build assemble the weapons of his company that they got their hands on. Stark 
-	secretely builds a prototype Iron Man suit and fights his way out. This was life 
-	changing for Stark as he nearly lost his life and was awoken by the fact that 
-	his weapons were in the hands of terrorists. He halts all weapon sales by his 
-	company and watches as his company falls apart from within. He finds out of a 
-	village that was taken over by terrorists using his weapons and flies there in 
-	his new Iron Man suit and frees the people. So, from now on Stark is 
-	transitioning to being Iron Man full time. However, the remnants of his first 
-	prototype suit got in the hands of terrorists and soon they may have a rival 
-	weapon to the suit.</p> 
+		<div class="card">
+		  <div class="card-header">
+		    Iron Man Quote
+		  </div>
+		  <div class="card-body">
+		    <blockquote class="blockquote mb-0">
+		    	<p> Thor: You have no idea what you are dealing with. <br>
+					Tony Stark: Uh, Shakespeare in The Park? Doth mother know you weareth her drapes?
+				</p>
+		      <footer class="blockquote-footer">Tony Stark in <cite title="Source Title">Avengers 2012</cite></footer>
+		    </blockquote>
+		  </div>
+		</div>
 
-	<h3>Impact on Future Marvel Movies</h3>
-	<p>Since Iron Man was such a success Marvel began releasing more movies at a 
-	rapid rate. Since Iron Man's release in 2008 Marvel has released a total of 
-	25 movies and counting. Iron has two more movies of his own and is a main 
-	character in the Marvel Avengers movies. Iron Man paved the way for the 
-	success of Marvel movies.</p>
+		<h3>Plot Line</h3>
+		<p>In the movie, Downey plays the character, Tony Stark, the real name of 
+		the man who wears the Iron Man suit. Stark is a super cocky, rich, yet 
+		brilliant young man who designs, builds, and sells ultra-modern weapons to the 
+		United States government. In the movie, Stark is abducted and held captive by 
+		terrosists after they attacked a military convoy Stark was in after 
+		demonstrating a new missile of his. In captivity, the terrorists force Stark to
+		build assemble the weapons of his company that they got their hands on. Stark 
+		secretely builds a prototype Iron Man suit and fights his way out. This was life 
+		changing for Stark as he nearly lost his life and was awoken by the fact that 
+		his weapons were in the hands of terrorists. He halts all weapon sales by his 
+		company and watches as his company falls apart from within. He finds out of a 
+		village that was taken over by terrorists using his weapons and flies there in 
+		his new Iron Man suit and frees the people. So, from now on Stark is 
+		transitioning to being Iron Man full time. However, the remnants of his first 
+		prototype suit got in the hands of terrorists and soon they may have a rival 
+		weapon to the suit.</p> 
 
-	<img src="img/ironman.jpeg" alt="Iron Man image"/>
+		<h3>Impact on Future Marvel Movies</h3>
+		<p>Since Iron Man was such a success Marvel began releasing more movies at a 
+		rapid rate. Since Iron Man's release in 2008 Marvel has released a total of 
+		25 movies and counting. Iron has two more movies of his own and is a main 
+		character in the Marvel Avengers movies. Iron Man paved the way for the 
+		success of Marvel movies.</p>
 
-	<footer>
-		Website created by Buck and Paige
-	</footer>
+		<img src="img/ironman.jpeg" alt="Iron Man image"/>
+
+		<footer>
+			Website created by Buck and Paige
+		</footer>
+	</div>
+
+	<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+	</script>
 </body>
 
 </html>

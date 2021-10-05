@@ -3,69 +3,135 @@
 
 <head> 
 	<meta charset="utf-8">
-  	<link rel="stylesheet" type="text/css" href="css_style_sheet.css">
 	<title>Avengers Infinity War</title>
+
+	<!-- This says our CSS is compatible with phones, and phones
+	       don't need to scale it strangely. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+
+	<!-- Optional theme add-on -->
+	<link 
+	rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+	crossorigin="anonymous">
 </head>
 
 <body>
-	<header>
-		<nav>	
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light bg-light">
+				<div class="container-fluid">
+		          <!-- Brand/site name -->
+		          <a class="navbar-brand" href="index.html">Marvel Movies Explained</a>
+		          <!-- Hamburger icon -->
+		          <button class="navbar-toggler"
+		                  type="button"
+		                  data-bs-toggle="collapse"
+		                  data-bs-target="#navbarSupportedContent"
+		                  aria-controls="navbarSupportedContent"
+		                  aria-expanded="false"
+		                  aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <!-- Div to hide stuff if we have hamburger -->
+		          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		            <!-- Nav bar item list -->
+		            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="about.html">About</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="iron_man.html">Iron Man</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="thor.html">Thor</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link active" href="avengers_infinity_war.html">Avengers Infinity War</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="black_panther.html">Black Panther</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+			</nav>
 			<h1>Avengers Infinity War</h1>
-			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="iron_man.html">Iron Man</a></li>
-				<li><a href="thor.html">Thor</a></li>
-				<li class="active"><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-				<li><a href="black_panther.html">Black Panther</a></li>
-			</ul>
-		</nav>
-	</header>
-	<h2>Release Information</h2>
-	<p>Avengers Infinity War was released in 2018. Avengers Infinity War was the most succesful and arguably the most entertaining Marvel Movie ever at the time. Infinity War was the fourth-highest-grossing film of all time worldwide grossing over &dollar;2 billion.</p>
+		</header>
+		<div class="row">
+	        <div class="col-12 col-xl-6">
+				<h2>Release Information</h2>
+				<p>Avengers Infinity War was released in 2018. Avengers Infinity War was the most succesful and arguably the most entertaining Marvel Movie ever at the time. Infinity War was the fourth-highest-grossing film of all time worldwide grossing over &dollar;2 billion.</p>
 
-	<h2>Background of Avengers</h2>
-	<p>Avengers is a group of the best Marvel suoerheros assembled to take down the worst villians. The first Avengers movie was released in 2012 followed by four more including Infinity War. Avengers is the most widely known part of Marvel and all the Avengers movies are the most popular. Below is a table of all the Avengers Movies.</p>
-	<table class="centered">
-			<tr>
-				<th>Avenger Movie</th>
-				<th>Box Office</th>
-			</tr>
-			<tr>
-				<td>The Avengers</td>
-				<td>&dollar;1.5 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Age of Ultron</td>
-				<td>&dollar;1.4 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Civil War</td>
-				<td>&dollar;1.1 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Infinity War</td>
-				<td>&dollar;2 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Endgame</td>
-				<td>&dollar;2.8 Billion</td>
-			</tr>
-	</table>
-	
+				<h2>Background of Avengers</h2>
+				<p>Avengers is a group of the best Marvel suoerheros assembled to take down the worst villians. The first Avengers movie was released in 2012 followed by four more including Infinity War. Avengers is the most widely known part of Marvel and all the Avengers movies are the most popular. Below is a table of all the Avengers Movies.</p>
+			</div><!-- End Col -->
+	        <div class="col-12 col-xl-6">
+				<table class="table table-striped table-dark table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Avenger Movie</th>
+							<th>Box Office</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>The Avengers</td>
+							<td>&dollar;1.5 Billion</td>
+						</tr>
+						<tr>
+							<td>Avengers Age of Ultron</td>
+							<td>&dollar;1.4 Billion</td>
+						</tr>
+						<tr>
+							<td>Avengers Civil War</td>
+							<td>&dollar;1.1 Billion</td>
+						</tr>
+						<tr>
+							<td>Avengers Infinity War</td>
+							<td>&dollar;2 Billion</td>
+						</tr>
+						<tr>
+							<td>Avengers Endgame</td>
+							<td>&dollar;2.8 Billion</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- End Col -->
+		</div> <!-- End Row -->
+		
 
-	<h2>Plot Line</h2>
-	Infinity War was the massive battle between all the Avengers and the ultimate villain Thanos. Thanos was on the hunt to collect all of the Infinity Stones. The Infinity Stones consisted of six stones that each had incredible power. Together Thanos could snap his fingers and do whatever he wanted with the stones. The Avengers were doing everything they could to keep the stones out of his grasp. Thanos's ultimate goal was to get all the Infinity Stones and snap half of all people to dust. He believed that was the best way to sustain life forever to get rid of overcrowding and limited resources. Obviously, this is really bad as half of the population of the universe would be killed. Ultimately after a crazy and massive fight, Thanos managed to collect all the stones and complete his mission. This was a massive plot twist as the villain actually won. However, the door was left open for one last chance to save the world. 
+		<h2>Plot Line</h2>
+		Infinity War was the massive battle between all the Avengers and the ultimate villain Thanos. Thanos was on the hunt to collect all of the Infinity Stones. The Infinity Stones consisted of six stones that each had incredible power. Together Thanos could snap his fingers and do whatever he wanted with the stones. The Avengers were doing everything they could to keep the stones out of his grasp. Thanos's ultimate goal was to get all the Infinity Stones and snap half of all people to dust. He believed that was the best way to sustain life forever to get rid of overcrowding and limited resources. Obviously, this is really bad as half of the population of the universe would be killed. Ultimately after a crazy and massive fight, Thanos managed to collect all the stones and complete his mission. This was a massive plot twist as the villain actually won. However, the door was left open for one last chance to save the world. 
 
-	<h2>Impact on Future Marvel Movies</h2>
-	<p>After this movie fans were shocked. The villain had won and half the Avengers were turned to dust. However, this movie paved the way for the very last Avengers movie&colon; Avengers Endgame. Endgame received massive hype and build-up thanks to Infinity War. Endgame grossed &dollar;2.8 Billion making it the most popular Marvel movie by far. Endgame was where Thanos was finally destroyed and universe was restored. Endgame was the end of the avengers movies and signified the end of an era for Marvel movies as they turned toward new plot points.</p>
+		<h2>Impact on Future Marvel Movies</h2>
+		<p>After this movie fans were shocked. The villain had won and half the Avengers were turned to dust. However, this movie paved the way for the very last Avengers movie&colon; Avengers Endgame. Endgame received massive hype and build-up thanks to Infinity War. Endgame grossed &dollar;2.8 Billion making it the most popular Marvel movie by far. Endgame was where Thanos was finally destroyed and universe was restored. Endgame was the end of the avengers movies and signified the end of an era for Marvel movies as they turned toward new plot points.</p>
 
-	<img src="img/infinityguantlet.jpeg" alt="Infinity Guantlet Image"/>
+		<img src="img/infinityguantlet.jpeg" alt="Infinity Guantlet Image"/>
 
-	<footer>
-		Website created by Buck and Paige
-	</footer>
+		<footer>
+			Website created by Buck and Paige
+		</footer>
+	</div> <!-- End Container Tag -->
+
+	<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+	</script>
 </body>
 
 </html>

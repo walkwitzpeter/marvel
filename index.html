@@ -2,35 +2,113 @@
 <html lang="en">
 <head> 
 	<meta charset="utf-8">
-  	<link rel="stylesheet" type="text/css" href="css_style_sheet.css">
 	<title>Marvel Movies Explained</title>
+	 
+ 	<!-- This says our CSS is compatible with phones, and phones
+	       don't need to scale it strangely. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Bootstrap CSS -->
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+
+	<!-- Optional theme add-on -->
+	<link 
+	rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+	crossorigin="anonymous">
 </head>
 
 <body>
-	<header>
-			<h1>Marvel Movies Explained</h1>
-		<nav>	
-			<img class="marvelLogo" src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo">
-			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="iron_man.html">Iron Man</a></li>
-				<li><a href="thor.html">Thor</a></li>
-				<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-				<li><a href="black_panther.html">Black Panther</a></li>
-			</ul>
-		</nav>
-	</header>
-	<h2>Home</h2>
-	<p>Welcome to the Marvel Movies Explained Website&excl; This website serves strictly as a base source of information for the Marvel Movies. Here we have a quick background of what the Marvel Movies are, as well as a more in depth look at four of our favorite Marvel movies&excl; Trust me, choosing these four were extremely hard as all Marvel movies are amazing. This is a great place for someone new to Marvel, to start their Marvel journey. However, beware, you may develop a severe addiction to the Marvel Universe. Once your addiction begins there are thousands of comics series and various in depth analysis all over the web for you to get your hands on. One of the best things about Marvel is that it is extremely hard to run out of content to consume. It would take you roughly 917 days straight without breaks to read all of the comics&excl;</p>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light bg-light">
+				<div class="container-fluid">
+		          <!-- Brand/site name -->
+		          <a class="navbar-brand" href="index.html">Marvel Movies Explained</a>
+		          <!-- Hamburger icon -->
+		          <button class="navbar-toggler"
+		                  type="button"
+		                  data-bs-toggle="collapse"
+		                  data-bs-target="#navbarSupportedContent"
+		                  aria-controls="navbarSupportedContent"
+		                  aria-expanded="false"
+		                  aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <!-- Div to hide stuff if we have hamburger -->
+		          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		            <!-- Nav bar item list -->
+		            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
 
-	<!-- Peter addition - 1 -->		
-	<img class="marvelLogo" src="img/marvel_logo.png" alt="Marvel Logo">
-	
-	<footer>
-		Website created by Buck and Paige
-	</footer>
+		              <li class="nav-item">
+		                <a class="nav-link" href="about.html">About</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="iron_man.html">Iron Man</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="thor.html">Thor</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="black_panther.html">Black Panther</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+			</nav>
+			<h1>Marvel Movies Explained</h1>
+			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="200" height="100">
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			  Click Bait!
+			</button>
+
+			<!-- Modal (popup window)-->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="staticBackdropLabel">Ultron's Hack</h5>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="alert alert-danger" role="alert">You just gave Ultron access to your computer, be more careful where you click!! &#40;Angry Emoji&#41;</div>
+			        <img class="rounded mx-auto d-block" src="img/ultron.jpg" alt="Ultron Picture">
+			        My name is ULTRON and you have fallen for my click bait trap, what an idiot. Your computer is now mine, good luck getting back to your webpage &#58;P <br>MWAHAHAHAHAHA &emsp; MWAHAHAHAHAHA
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</header>
+		<h2>Home</h2>
+		<p>Welcome to the Marvel Movies Explained Website&excl; This website serves strictly as a base source of information for the Marvel Movies. Here we have a quick background of what the Marvel Movies are, as well as a more in depth look at four of our favorite Marvel movies&excl; Trust me, choosing these four were extremely hard as all Marvel movies are amazing. This is a great place for someone new to Marvel, to start their Marvel journey. However, beware, you may develop a severe addiction to the Marvel Universe. Once your addiction begins there are thousands of comics series and various in depth analysis all over the web for you to get your hands on. One of the best things about Marvel is that it is extremely hard to run out of content to consume. It would take you roughly 917 days straight without breaks to read all of the comics&excl;</p>
+
+		<!-- Peter addition - 1 -->		
+		<img src="img/marvel_logo.png" alt="Marvel Logo" width="200" height="100">
+		
+		<footer>
+			Website created by Buck and Paige
+		</footer>
+	</div>
+
+	<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+	</script>
 </body>
 
 

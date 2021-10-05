@@ -3,81 +3,144 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css_style_sheet.css">
 	<title>Thor</title>
 
-		<!-- Head (internal) Styling -->
-	<style type="text/css">
-		h1, h2{
-			color:darkblue;
-		}
-	</style>
+	<!-- This says our CSS is compatible with phones, and phones
+	       don't need to scale it strangely. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Bootstrap CSS -->
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+
+	<!-- Optional theme add-on -->
+	<link 
+	rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css"
+	integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" 
+	crossorigin="anonymous">
 </head>
 
 <body>
-	<header>
-		<nav>
-				<h1>Marvel Movies Explained</h1>
-				<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="iron_man.html">Iron Man</a></li>
-			<li class="active"><a href="thor.html">Thor</a></li>
-			<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-			<li><a href="black_panther.html">Black Panther</a></li>
-		</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light bg-light">
+				<div class="container-fluid">
+		          <!-- Brand/site name -->
+		          <a class="navbar-brand" href="index.html">Marvel Movies Explained</a>
+		          <!-- Hamburger icon -->
+		          <button class="navbar-toggler"
+		                  type="button"
+		                  data-bs-toggle="collapse"
+		                  data-bs-target="#navbarSupportedContent"
+		                  aria-controls="navbarSupportedContent"
+		                  aria-expanded="false"
+		                  aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <!-- Div to hide stuff if we have hamburger -->
+		          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		            <!-- Nav bar item list -->
+		            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
 
-			<h1>Thor</h1>
+		              <li class="nav-item">
+		                <a class="nav-link" href="about.html">About</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="iron_man.html">Iron Man</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link active" href="thor.html">Thor</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+		              </li>
+
+		              <li class="nav-item">
+		                <a class="nav-link" href="black_panther.html">Black Panther</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+			</nav>
+		</header>
+
+		<h1>Thor</h1>
+		<div class="alert alert-info" role="alert">
 			<h2>Norse God of Thunder and Lightening</h2>
+		</div>
 
-			<p>As the son of the king of all Norse gods, Odin, Thor grows up as Prince of Asgard. His mother and Odin's wife, Frigga, plays a very influential role in helping Thor prepare to be king one day. In the movie, Asgardians, or also known as &AElig;sir, are actually a species of extraterrestrial upbringing, keeping the form of humans though. They have highly advanced technology, which tends to be seen as a high magic that makes up their world.</p>
+		<p>As the son of the king of all Norse gods, Odin, Thor grows up as Prince of Asgard. His mother and Odin's wife, Frigga, plays a very influential role in helping Thor prepare to be king one day. In the movie, Asgardians, or also known as &AElig;sir, are actually a species of extraterrestrial upbringing, keeping the form of humans though. They have highly advanced technology, which tends to be seen as a high magic that makes up their world.</p>
 
-			<p>Conflict arises and everything changes when the Frost Giants, enemies of the gods', attack. They traveled over the Bifr&ouml;st Bridge, bringing chaos and fear to the people of Asgard. Loki, God of Mischief and Thor's adopted brother, attempts to take Asgard for himself. Thor must learn the hardships of being mortal on Earth while fighting for love and family. His weapon of choice is a hammer named Mj&oslash;lnir. Thor is portrayed by Chris Hemsworth in the 8&plus; movies he is scripted in, including the new upcoming film of 2022 <i>Thor&#58; Love and Thunder</i>. As for comics, Thor made his first debut in <i>Journey into Mystery</i> &num;83
-			that released in 1962.</p>
+		<div class="card">
+		  <div class="card-header">
+		    Iron Man Quote
+		  </div>
+		  <div class="card-body">
+		    <blockquote class="blockquote mb-0">
+		    	<p> "I NOTICE YOU’VE COPIED MY BEARD."
+				</p>
+		      <footer class="blockquote-footer">Thor in <cite title="Source Title">Avengers&#58; Infinity War 2018</cite></footer>
+		    </blockquote>
+		  </div>
+		</div>
 
-			<!-- Peter Addition - 5 -->
-			<p>Thor Ragnarok is probably the best movie in the Thor series, however 
-			it is unfortunately only really good if you first watch the other movies. 
-			However, if you don't want to watch the other movies then it is still very 
-			enjoyable on its own. Therefore I would highly recommend this movie to 
-			anyone who hasn't seen it.</p>
+		<p>Conflict arises and everything changes when the Frost Giants, enemies of the gods', attack. They traveled over the Bifr&ouml;st Bridge, bringing chaos and fear to the people of Asgard. Loki, God of Mischief and Thor's adopted brother, attempts to take Asgard for himself. Thor must learn the hardships of being mortal on Earth while fighting for love and family. His weapon of choice is a hammer named Mj&oslash;lnir. Thor is portrayed by Chris Hemsworth in the 8&plus; movies he is scripted in, including the new upcoming film of 2022 <i>Thor&#58; Love and Thunder</i>. As for comics, Thor made his first debut in <i>Journey into Mystery</i> &num;83
+		that released in 1962.</p>
+
+		<!-- Peter Addition - 5 -->
+		<p>Thor Ragnarok is probably the best movie in the Thor series, however 
+		it is unfortunately only really good if you first watch the other movies. 
+		However, if you don't want to watch the other movies then it is still very 
+		enjoyable on its own. Therefore I would highly recommend this movie to 
+		anyone who hasn't seen it.</p>
 
 
-			<h2>Notable Movie Characters from Thor</h2>
-			<!-- Inline styling -->
-    <table class="centered" border="1px solid black">
-      <tr>
-        <th>Family</th>
-        <th>Friends</th>
-        <th>Extras</th>
-      </tr>
+		<h2>Notable Movie Characters from Thor</h2>
+	    <table class="table table-striped table-dark table-bordered">
+	      <thead class="thead-light">
+	      	<tr>
+		        <th>Family</th>
+		        <th>Friends</th>
+		        <th>Extras</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+		      <tr>
+		        <td>Odin</td>
+		        <td>Jane</td>
+		        <td>Heimdall</td>
+		      </tr>
 
-      <tr>
-        <td>Odin</td>
-        <td>Jane</td>
-        <td>Heimdall</td>
-      </tr>
+		      <tr>
+		        <td>Frigga</td>
+		        <td>Darcy</td>
+		        <td>Agent Phil</td>
+		      </tr>
+		      <tr>
+		        <td>Loki</td>
+		        <td>Dr. Erik</td>
+		        <td>Volstagg</td>
+		      </tr>
+	      </tbody>
 
-      <tr>
-        <td>Frigga</td>
-        <td>Darcy</td>
-        <td>Agent Phil</td>
-      </tr>
-      <tr>
-        <td>Loki</td>
-        <td>Dr. Erik</td>
-        <td>Volstagg</td>
-      </tr>
+	    </table>
 
-    </table>
+			<img src="img/thorpic.png" alt="Picture of Thor and Hammer">
 
-		<img src="img/thorpic.png" alt="Picture of Thor and Hammer">
+		<footer> Website created by Buck and Paige </footer>
+	</div>
 
-<footer> Website created by Buck and Paige </footer>
-
+	<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+	</script>
 </body>
 </html>
